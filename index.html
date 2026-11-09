@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G∞ Resource Radar</title>
+<style>
+:root { --bg:#070b14; --card:#121a2b; --acc:#3ee0ff; --acc2:#7c5cff; --ok:#3dffb0; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui,sans-serif; background:radial-gradient(1200px 600px at 20% -10%, #163 0%, transparent 50%), radial-gradient(900px 500px at 100% 0%, #225 0%, transparent 45%), var(--bg); color:#eef6ff; }
+.wrap { max-width:980px; margin:0 auto; padding:2rem 1.2rem 4rem; }
+.badge { display:inline-block; color:#001018; background:linear-gradient(90deg,var(--acc),var(--acc2)); padding:.25rem .7rem; border-radius:999px; font-size:.8rem; font-weight:700; }
+h1 { font-size:clamp(2rem,5vw,3.2rem); margin:.6rem 0 .2rem; background:linear-gradient(90deg,#fff,var(--acc)); -webkit-background-clip:text; color:transparent; }
+.sub { color:#9eb0c9; font-size:1.1rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:.8rem; margin:1.2rem 0; }
+.card { background:rgba(18,26,43,.9); border:1px solid #24324a; border-radius:16px; padding:1rem 1.1rem; }
+.card b { color:var(--acc); }
+.btn { display:inline-block; margin:.35rem .35rem 0 0; background:linear-gradient(90deg,var(--acc),#5aa7ff); color:#001018; text-decoration:none; font-weight:800; padding:.7rem 1rem; border-radius:12px; }
+.btn2 { background:transparent; color:var(--acc); border:1px solid var(--acc); }
+.price { font-size:1.6rem; margin:.2rem 0; }
+.ok { color:var(--ok); }
+footer { margin-top:2rem; color:#7f90a8; font-size:.85rem; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">G∞ · LIVE RADAR</span>
+  <h1>Resource Radar</h1>
+  <p class="sub">Мониторинг открытых API. Минутный цикл. Прозрачный статус.</p>
+
+  <div class="grid">
+    <div class="card">
+      <b>Что это</b>
+      <p>Следим за GitHub API и OpenAlex. Пишем лог. Показываем, что живо.</p>
+      <p class="ok">Сейчас: сервер 24/7 · хаб открыт</p>
+    </div>
+    <div class="card">
+      <b>Живые панели</b>
+      <p><a class="btn" href="http://2.31.193.108:8091/">Radar Hub</a></p>
+      <p><a class="btn btn2" href="http://2.31.193.108:8090/">Capital Radar</a></p>
+    </div>
+    <div class="card">
+      <b>Цифры контура</b>
+      <p>Лаборатории · 1 000 000<br>Оркестраторы · 100 000<br>Ноды · 200 000</p>
+      <p style="color:#9eb0c9">Архитектурный реестр, не 1M процессов.</p>
+    </div>
+  </div>
+
+  <h2>Тарифы</h2>
+  <div class="grid">
+    <div class="card"><b>Scout</b><div class="price">$29</div><p>5 источников<br>отчёт раз в день</p></div>
+    <div class="card"><b>Radar</b><div class="price">$79</div><p>20 источников<br>минутный цикл<br>лог</p></div>
+    <div class="card"><b>Custom</b><div class="price">от $200</div><p>свои источники<br>выгрузка</p></div>
+  </div>
+
+  <div class="card" style="margin-top:1rem">
+    <b>Первый отчёт бесплатно</b>
+    <p>Напиши, какие источники мониторить.</p>
+    <a class="btn" href="mailto:your@email.com?subject=Resource%20Radar">Написать</a>
+    <p style="color:#9eb0c9">Замени your@email.com на свой.</p>
+  </div>
+
+  <footer>
+    «РЕСУРСЫ ВСЕМ РЕСУРСАМ — РЕСУРСЫ!»<br>
+    NO EVIDENCE ⇒ NO CLAIM · G∞ Resource Radar
+  </footer>
+</div>
+</body>
+</html>
